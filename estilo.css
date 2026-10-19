@@ -1,0 +1,29 @@
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0; 
+  background: var(--fundo); 
+  color: var(--tinta);
+  font-family: var(--fonte-corpo); 
+  line-height: 1.55;
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+}
+
+h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 600; line-height: 1.2; margin: 0 0 .5em; }
+
+h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); }
+h2 { font-size: 1.5rem; }
+
+a { color: var(--primaria); }
+
+:focus-visible { outline: 3px solid var(--realce); outline-offset: 2px; }
+
+main { flex: 1; 
+  width: 100%; 
+  max-width: 1080px; 
+  margin: 0 auto; 
+  padding: 24px 16px 48px; 
+}
